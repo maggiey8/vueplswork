@@ -1,12 +1,14 @@
 <template>
   <div class="rank">
-    <RankData v-for="items in chars" :Char = items></RankData>
+    <RankData v-for="items in store.chars" :Char = items></RankData>
   </div>
 </template>
 
 <script setup>
 import RankData from '@/components/RankData.vue';
-import chars from '@/stores/counter.js';
+import { useCharacterStore } from '@/stores/counter.js';
+
+const store = useCharacterStore()
 </script>
 
 <style>

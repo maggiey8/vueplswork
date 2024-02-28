@@ -171,6 +171,7 @@ export const useCharacterStore = defineStore('char', () => {
     const hour = ref('Morning')
     const dow = ref('Saturday')
     const date = ref('4/9')
+    const isChosen = ref(false)
 
-    return {chars, timestamp, hour, dow, date}
+    return {chars, timestamp, hour, dow, date, isChosen}
 })

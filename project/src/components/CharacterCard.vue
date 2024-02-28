@@ -1,8 +1,7 @@
 <template>
-    <div class="card">
+    <button class="card">
         <h2>{{ Char.characterName }}</h2>
-
-    </div>
+    </button>
 </template>
 
 <script setup>
@@ -20,5 +19,9 @@
     background-color: rgb(212, 20, 20);
 
     min-width: 60px
+}
+
+.max {
+    background-color: rgb(57, 145, 196);
 }
 </style>

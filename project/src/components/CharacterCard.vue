@@ -1,6 +1,7 @@
 <template>
-    <button class="card">
+    <button class="card" :class="Char.max ? 'max': 'maxFalse'">
         <h2>{{ Char.characterName }}</h2>
+        <h3 v-if="Char.max">Max Rank</h3>
     </button>
 </template>
 
@@ -12,7 +13,8 @@
 
 <style scoped>
 .card {
-    margin: 20px;
+    margin: 15px;
+    font-size: 0.7rem;
     width: 10vw;
     height: 15vh;
     text-align: center;

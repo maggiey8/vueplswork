@@ -1,7 +1,7 @@
 <template>
   <h2>{{ store.hour }}, {{ store.dow }}, {{ store.date }}</h2>
   <div>
-    <CharacterCard :disabled="store.isChosen" :class="{'max': max}"
+    <CharacterCard :disabled="store.isChosen"
       v-for="items in store.chars" :Char=items @click="incRank(items)"></CharacterCard>
   </div>
   <button v-if="store.isChosen" @click="NextDay">Next</button>
@@ -16,12 +16,13 @@ const store = useCharacterStore()
 function incRank(items) {
   if (items.rank < 9) {
     items.rank++
+    store.isChosen = true
   }
   else if (items.rank === 9) {
-    items.rank++
-    
+    items.rank = 10
+    items.max = true
+    store.isChosen = true
   } 
-  store.isChosen = true
 }
 
 const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
@@ -42,6 +43,9 @@ function NextDay() {
     store.date = `${current.getMonth()+1}/${current.getDate()}`
 
     store.isChosen = false
+
+    const checkIf =  [store.hour, current.getDay()]
+    return checkIf
 }}
 
 </script>

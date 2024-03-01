@@ -17,156 +17,174 @@ export const useCharacterStore = defineStore('char', () => {
             characterName: 'Ryuji',
             arcana: 'Chariot',
             number: 'VII',
-            time: ['Morning', 'Afternoon'],
-            DOW: [1,2,3,4,5,6,7],
+            time: ['Morning'],
+            DOW: [1,2,3,4,5,6,0],
             rain: true,
-            rank: 0
+            rank: 0,
+            max: false
         },
         {
             characterName: 'Ann',
             arcana: 'Lovers',
             number: 'VI',
-            time: ['Morning', 'Afternoon'],
-            DOW: [1,2,3,5,7],
+            time: ['Morning'],
+            DOW: [1,2,3,5,0],
             rain: true,
-            rank: 0
+            rank: 0,
+            max: false
         },
         {
             characterName: 'Yusuke',
             arcana: 'Emperor',
             number: 'IV',
-            time: ['Morning', 'Afternoon'],
-            DOW: [1,2,3,4,5,6,7],
+            time: ['Morning'],
+            DOW: [1,2,3,4,5,6,0],
             rain: true,
-            rank: 0
+            rank: 0,
+            max: false
         },
         {
             characterName: 'Makoto',
             arcana: 'Priestess',
             number: 'II',
-            time: ['Morning', 'Afternoon'],
-            DOW:  [2,4,6,7],
+            time: ['Morning'],
+            DOW:  [2,4,6,0],
             rain: true,
-            rank: 0
+            rank: 0,
+            max: false
         },
         {
             characterName: 'Futaba',
             arcana: 'Hermit',
             number: 'IX',
-            time: ['Morning', 'Afternoon'],
-            DOW: [3,4,6,7],
+            time: ['Morning'],
+            DOW: [3,4,6,0],
             rain: false,
-            rank: 0
+            rank: 0,
+            max: false
         },
         {
             characterName: 'Haru',
             arcana: 'Empress',
             number: 'III',
-            time: ['Morning', 'Afternoon'],
+            time: ['Morning'],
             DOW: [1,2,3,4,5,6],
             rain: false,
-            rank: 0
+            rank: 0,
+            max: false
         },
         {
             characterName: 'Caroline & Justine',
             arcana: 'Strength',
             number: 'XI',
-            time: ['Early Morning', 'Morning', 'Afternoon', 'Evening', 'Night'],
-            DOW: [1,2,3,4,5,6,7],
+            time: ['Morning','Evening',],
+            DOW: [1,2,3,4,5,6,0],
             rain: true,
-            rank: 0
+            rank: 0,
+            max: false
         },
         {
             characterName: 'Mishima',
             arcana: 'Moon',
             number: 'XVIII',
-            time: ['Evening', 'Night'],
-            DOW: [1,2,3,4,5,6,7],
+            time: ['Evening'],
+            DOW: [1,2,3,4,5,6,0],
             rain: true,
-            rank: 0
+            rank: 0,
+            max: false
         },
         {
             characterName: 'Chihaya',
             arcana: 'Fortune',
             number: 'X',
-            time: ['Evening', 'Night'],
-            DOW: [2,4,6,7],
+            time: ['Evening'],
+            DOW: [2,4,6,0],
             rain: false,
-            rank: 0
+            rank: 0,
+            max: false
         },
         {
             characterName: 'Iwai',
             arcana: 'Hanged Man',
             number: 'XII',
-            time: ['Evening', 'Night'],
-            DOW: [2,4,7],
+            time: ['Evening'],
+            DOW: [2,4,0],
             rain: true,
-            rank: 0
+            rank: 0,
+            max: false
         },
         {
             characterName: 'Takemi',
             arcana: 'Death',
             number: 'XIII',
-            time: ['Morning', 'Afternoon'],
-            DOW: [1,2,3,4,5,6,7],
+            time: ['Morning'],
+            DOW: [1,2,3,4,5,6,0],
             rain: true,
-            rank: 0
+            rank: 0,
+            max: false
         },
         {
             characterName: 'Kawakami',
             arcana: 'Temperance',
             number: 'XIV',
-            time: ['Evening', 'Night'],
+            time: ['Evening'],
             DOW: [5,6],
             rain: true,
-            rank: 0
+            rank: 0,
+            max: false
         },
         {
             characterName: 'Ohya',
             arcana: 'Devil',
             number: 'XV',
-            time: ['Evening', 'Night'],
-            DOW: [1,2,3,4,5,6,7],
+            time: ['Evening'],
+            DOW: [1,2,3,4,5,6,0],
             rain: true,
-            rank: 0
+            rank: 0,
+            max: false
         },
         {
             characterName: 'Hifumi',
             arcana: 'Star',
             number: 'XVII',
-            time: ['Evening', 'Night'],
-            DOW: [1,3,6,7],
+            time: ['Evening'],
+            DOW: [1,3,6,0],
             rain: true,
-            rank: 0
+            rank: 0,
+            max: false
         },
         {
             characterName: 'Yoshida',
             arcana: 'Sun',
             number: 'XIX',
-            time: ['Evening', 'Night'],
+            time: ['Evening'],
             DOW: [7],
             rain: true,
-            rank: 0
+            rank: 0,
+            max: false
         },
         {
             characterName: 'Sojiro',
             arcana: 'Hierophant',
             number: 'V',
-            time: ['Evening', 'Night'],
-            DOW: [1,2,4,5,6,7],
+            time: ['Evening'],
+            DOW: [1,2,4,5,6,0],
             rain: true,
-            rank: 0
+            rank: 0,
+            max: false
         },
         {
             characterName: 'Shinya',
             arcana: 'Tower',
             number: 'XVI',
-            time: ['Morning', 'Afternoon'],
+            time: ['Morning'],
             DOW: [1,2,4,6],
             rain: true,
-            rank: 0
+            rank: 0,
+            max: false
         },
       ]
+      
     const timestamp = ref(1460239200000)
     const hour = ref('Morning')
     const dow = ref('Saturday')

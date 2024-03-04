@@ -56,4 +56,11 @@ div {
   flex-wrap: wrap;
   justify-content: space-around;
 }  
+
+button {
+  margin-top: 15px;
+  margin-left: 90%;
+  height: 2rem;
+  width: 5rem;
+}
 </style>

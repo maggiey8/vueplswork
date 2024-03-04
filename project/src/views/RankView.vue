@@ -12,5 +12,9 @@ const store = useCharacterStore()
 </script>
 
 <style>
-
+.rank {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}  
 </style>

@@ -19,7 +19,6 @@ export const useCharacterStore = defineStore('char', () => {
             number: 'VII',
             time: ['Morning'],
             DOW: [1,2,3,4,5,6,0],
-            rain: true,
             rank: 0,
             max: false
         },
@@ -29,7 +28,6 @@ export const useCharacterStore = defineStore('char', () => {
             number: 'VI',
             time: ['Morning'],
             DOW: [1,2,3,5,0],
-            rain: true,
             rank: 0,
             max: false
         },
@@ -39,7 +37,6 @@ export const useCharacterStore = defineStore('char', () => {
             number: 'IV',
             time: ['Morning'],
             DOW: [1,2,3,4,5,6,0],
-            rain: true,
             rank: 0,
             max: false
         },
@@ -49,7 +46,6 @@ export const useCharacterStore = defineStore('char', () => {
             number: 'II',
             time: ['Morning'],
             DOW:  [2,4,6,0],
-            rain: true,
             rank: 0,
             max: false
         },
@@ -59,7 +55,6 @@ export const useCharacterStore = defineStore('char', () => {
             number: 'IX',
             time: ['Morning'],
             DOW: [3,4,6,0],
-            rain: false,
             rank: 0,
             max: false
         },
@@ -69,7 +64,6 @@ export const useCharacterStore = defineStore('char', () => {
             number: 'III',
             time: ['Morning'],
             DOW: [1,2,3,4,5,6],
-            rain: false,
             rank: 0,
             max: false
         },
@@ -79,7 +73,6 @@ export const useCharacterStore = defineStore('char', () => {
             number: 'XI',
             time: ['Morning','Evening',],
             DOW: [1,2,3,4,5,6,0],
-            rain: true,
             rank: 0,
             max: false
         },
@@ -89,7 +82,6 @@ export const useCharacterStore = defineStore('char', () => {
             number: 'XVIII',
             time: ['Evening'],
             DOW: [1,2,3,4,5,6,0],
-            rain: true,
             rank: 0,
             max: false
         },
@@ -99,7 +91,6 @@ export const useCharacterStore = defineStore('char', () => {
             number: 'X',
             time: ['Evening'],
             DOW: [2,4,6,0],
-            rain: false,
             rank: 0,
             max: false
         },
@@ -109,7 +100,6 @@ export const useCharacterStore = defineStore('char', () => {
             number: 'XII',
             time: ['Evening'],
             DOW: [2,4,0],
-            rain: true,
             rank: 0,
             max: false
         },
@@ -119,7 +109,6 @@ export const useCharacterStore = defineStore('char', () => {
             number: 'XIII',
             time: ['Morning'],
             DOW: [1,2,3,4,5,6,0],
-            rain: true,
             rank: 0,
             max: false
         },
@@ -129,7 +118,6 @@ export const useCharacterStore = defineStore('char', () => {
             number: 'XIV',
             time: ['Evening'],
             DOW: [5,6],
-            rain: true,
             rank: 0,
             max: false
         },
@@ -139,7 +127,6 @@ export const useCharacterStore = defineStore('char', () => {
             number: 'XV',
             time: ['Evening'],
             DOW: [1,2,3,4,5,6,0],
-            rain: true,
             rank: 0,
             max: false
         },
@@ -149,7 +136,6 @@ export const useCharacterStore = defineStore('char', () => {
             number: 'XVII',
             time: ['Evening'],
             DOW: [1,3,6,0],
-            rain: true,
             rank: 0,
             max: false
         },
@@ -159,7 +145,6 @@ export const useCharacterStore = defineStore('char', () => {
             number: 'XIX',
             time: ['Evening'],
             DOW: [7],
-            rain: true,
             rank: 0,
             max: false
         },
@@ -169,7 +154,6 @@ export const useCharacterStore = defineStore('char', () => {
             number: 'V',
             time: ['Evening'],
             DOW: [1,2,4,5,6,0],
-            rain: true,
             rank: 0,
             max: false
         },
@@ -179,7 +163,33 @@ export const useCharacterStore = defineStore('char', () => {
             number: 'XVI',
             time: ['Morning'],
             DOW: [1,2,4,6],
-            rain: true,
+            rank: 0,
+            max: false
+        },
+        {
+            characterName: 'Akechi',
+            arcana: 'Justice',
+            number: 'VIII',
+            time: ['Evening', 'Night'],
+            DOW: [1,2,3,4,5,6,0],
+            rank: 0,
+            max: false
+        },
+        {
+            characterName: 'Sumire',
+            arcana: 'Faith',
+            number: '',
+            time: ['Morning', 'Afternoon'],
+            DOW: [1,2,3,4,5,6,0],
+            rank: 0,
+            max: false
+        },
+        {
+            characterName: 'Maruki',
+            arcana: 'Councillor',
+            number: '1',
+            time: ['Morning', 'Afternoon'],
+            DOW: [1,2,3,5],
             rank: 0,
             max: false
         },
